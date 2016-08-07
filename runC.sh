@@ -2,7 +2,7 @@
 echo "Running C Program $1"
 echo "========================"
 
-gcc $1 # Compile C Program
+gcc -Wall $1 -lm # Compile C Program
 ./a.out # Display the output of C Program
 
 echo
