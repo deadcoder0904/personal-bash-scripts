@@ -1,11 +1,12 @@
 #!/bin/bash
-echo "Pushing to Github $1"
+echo "Pushing to Github"
 echo "========================"
 
-message=$1 || "Adding script on `date`"
-git add .
-git commit -am message 
-git push -u origin master
+message="Adding script on `date`"
+echo $message
+git add . # Git add all
+git commit -m "$message" # Git Set Message  
+git push -u origin master # Git push to origin master
 
 echo
 echo "========================"
