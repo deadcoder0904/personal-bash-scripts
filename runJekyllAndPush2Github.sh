@@ -8,7 +8,7 @@ cd "/media/deadcoder0904/TIMEPASS/Coding/Awesome Templates/Personal Site/best-a2
 bundle exec jekyll build
 cp README.md ../blog-pages
 cd "../blog-pages"
-push2Github
+`${BASH_ALIASES[push2Github]}`
 
 echo
 echo "========================"
