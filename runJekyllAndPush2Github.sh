@@ -2,7 +2,7 @@
 echo "Running Jekyll & Pushing to Github"
 echo "========================"
 
-message=${1:-"Adding script on `date`"}  
+message=${1:-"Adding script on `date` :blush:"}  
 echo $message
 cd "/media/deadcoder0904/TIMEPASS/Coding/Awesome Templates/Personal Site/best-a2k/blog"
 bundle exec jekyll build
