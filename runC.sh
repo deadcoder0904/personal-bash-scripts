@@ -4,6 +4,7 @@ echo "========================"
 
 gcc -Wall $1 -lm # Compile C Program
 ./a.out # Display the output of C Program
+rm -rf a.out # Remove the output of C++ Program
 
 echo
 echo "========================"

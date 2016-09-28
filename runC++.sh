@@ -4,6 +4,7 @@ echo "========================"
 
 g++ $1 # Compile C Program
 ./a.out # Display the output of C++ Program
+rm -rf a.out # Remove the output of C++ Program
 
 echo
 echo "========================"
