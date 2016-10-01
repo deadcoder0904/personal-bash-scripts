@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "Pushing to Github gh-pages"
-echo "========================"
+echo "Run uglify and push to Github gh-pages"
+echo "*********************************************************"
 
 npm run uglify
 push2Github
@@ -10,5 +10,5 @@ gpog
 gc master
 
 echo
-echo "========================"
-echo "Github gh-pages Push Successful"
+echo "*********************************************************"
+echo "Run uglify and push to Github gh-pages Push Successful"
