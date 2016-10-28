@@ -4,10 +4,7 @@ echo "*********************************************************"
 
 npm run uglify
 push2Github
-gc gh-pages
-git merge master
-gpog
-gc master
+createGhpagesAndMergeWithMaster
 
 echo
 echo "*********************************************************"
