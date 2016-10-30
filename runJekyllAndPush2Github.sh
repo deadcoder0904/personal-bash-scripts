@@ -4,7 +4,7 @@ echo "========================"
 
 message=${1:-"Adding script on `date` :blush:"}  
 echo $message
-cd "/media/deadcoder0904/TIMEPASS/Coding/Awesome Templates/Personal Site/best-a2k/blog"
+cd "/media/deadcoder0904/DEAD/Coding/General/blog"
 bundle exec jekyll build
 cp README.md ../blog-pages
 cd "../blog-pages"
