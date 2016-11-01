@@ -10,7 +10,7 @@ hexo generate # Generate static files
 cd public	# Static HTML directory
 
 push2Github # Push Hexo Sites Code to another Github repo
-createGhpagesAndMergeWithMaster # Deploy the Page on Github-Pages
+checkoutMasterAndMergeWithGhpages # Deploy the Page on Github-Pages
 
 echo
 echo "========================"
