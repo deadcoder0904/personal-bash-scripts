@@ -16,6 +16,7 @@ push2Github # Push Hexo Sites Code to another Github repo
 git checkout gh-pages
 git merge master
 git push origin gh-pages
+git checkout master
 
 echo
 echo "========================"
