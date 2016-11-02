@@ -2,21 +2,28 @@
 echo "Running Hexo & Pushing to Github"
 echo "========================"
 
-cd "/media/deadcoder0904/DEAD/Coding/General/blog"
-push2Github # Push Hexo Code to another Github repo
+rm -rf "/media/deadcoder0904/DEAD/Coding/General/blog/public/"
+cd "/media/deadcoder0904/DEAD/Coding/General/blog/"
+hexo generate
 
-hexo generate # Generate static files
+push2Github
 
-cd public	# Static HTML directory
+cd "/media/deadcoder0904/DEAD/Coding/General/blog-site/"
+mv "/media/deadcoder0904/DEAD/Coding/General/blog-site/.git" "/media/deadcoder0904/DEAD/Coding/General/.git"
+mv "/media/deadcoder0904/DEAD/Coding/General/blog-site/CNAME" "/media/deadcoder0904/DEAD/Coding/General/CNAME"
+mv "/media/deadcoder0904/DEAD/Coding/General/blog-site/README.md" "/media/deadcoder0904/DEAD/Coding/General/README.md"
+cd "/media/deadcoder0904/DEAD/Coding/General/"
+rm -rf "/media/deadcoder0904/DEAD/Coding/General/blog-site/"
+mkdir "/media/deadcoder0904/DEAD/Coding/General/blog-site/"
+cp -R "/media/deadcoder0904/DEAD/Coding/General/blog/public/." "/media/deadcoder0904/DEAD/Coding/General/blog-site/"
+cd "/media/deadcoder0904/DEAD/Coding/General/blog-site/"
+mv "/media/deadcoder0904/DEAD/Coding/General/.git" "/media/deadcoder0904/DEAD/Coding/General/blog-site/.git"
+mv "/media/deadcoder0904/DEAD/Coding/General/CNAME" "/media/deadcoder0904/DEAD/Coding/General/blog-site/CNAME"
+mv "/media/deadcoder0904/DEAD/Coding/General/README.md" "/media/deadcoder0904/DEAD/Coding/General/blog-site/README.md"
+push2Github
 
-push2Github # Push Hexo Sites Code to another Github repo
-
-# Deploy the Page on Github-Pages
-
-git checkout gh-pages
-git merge master
-git push origin gh-pages
-git checkout master
+# Create gh-pages branch for the first time using command `git checkout -b gh-pages`
+checkoutGhpagesAndMergeWithMaster
 
 echo
 echo "========================"
