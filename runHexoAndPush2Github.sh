@@ -16,6 +16,8 @@ rsync --recursive  "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/"
 cd "/media/deadcoder0904/DEAD/Coding/General/100dayz/"
 
 push2Github # push static site to Github
+checkoutGhpagesAndMergeWithMaster
+gc master
 
 echo
 echo "========================"
