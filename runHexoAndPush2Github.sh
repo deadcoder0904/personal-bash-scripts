@@ -3,7 +3,7 @@ echo "Running Hexo & Pushing to Github"
 echo "========================"
 
 cd "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/"
-hexo generate
+sudo hexo generate
 
 push2Github # push uncompiled code to Github
 
