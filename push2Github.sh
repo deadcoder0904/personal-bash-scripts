@@ -2,7 +2,7 @@
 echo "Pushing to Github"
 echo "========================"
 
-message=${1:-"Adding script on `date` :blush:"}  
+message=${1:-"Adding script on `date` :octocat:"}  
 echo $message
 git add . # Git add all
 git commit -m "$message" # Git Set Message  
