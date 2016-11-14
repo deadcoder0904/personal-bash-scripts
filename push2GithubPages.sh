@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Checkout gh-pages And merge with master"
+echo "Pushing 2 Github Pages"
 echo "####################################################"
 
 push2Github
@@ -7,4 +7,4 @@ checkoutGhpagesAndMergeWithMaster
 
 echo
 echo "####################################################"
-echo "Checkout gh-pages And merge with master Successful"
+echo "Pushing 2 Github Pages Successful"
