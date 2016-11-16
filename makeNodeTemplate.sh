@@ -3,7 +3,7 @@ echo "Node JS Start Template"
 echo "##############################################################################################################"
 echo
 
-cp -av "/media/deadcoder0904/TIMEPASS/Coding/Template Scripts/Node-JS" $1
+cp -av "/media/deadcoder0904/DEAD/Coding/General/template-scripts/Node-JS" $1
 
 echo
 echo "##############################################################################################################"
