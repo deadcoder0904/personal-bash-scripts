@@ -13,9 +13,11 @@ dir = "sorted"
 
 os.system("sudo mkdir -p " + dir)
 
+ext=".jpg"
 i=1
+
 for filename in files:
-	destination = "sorted/" + str(i) + ".jpg"
+	destination = "sorted/" + str(i) + ext
 	shutil.copy(filename,destination)
 	i = i + 1
 print "Copied all files to 'sorted' directory"
