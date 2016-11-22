@@ -1,6 +1,5 @@
 import os
 import shutil
-import errno
 
 search_dir = os.getcwd()
 
@@ -13,11 +12,11 @@ dir = "sorted"
 
 os.system("sudo mkdir -p " + dir)
 
-ext=".jpg"
+extension=".jpg"
 i=1
 
 for filename in files:
-	destination = "sorted/" + str(i) + ext
+	destination = "sorted/" + str(i) + extension
 	shutil.copy(filename,destination)
 	i = i + 1
 print "Copied all files to 'sorted' directory"
