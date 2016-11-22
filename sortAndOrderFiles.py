@@ -1,5 +1,4 @@
-import os
-import shutil
+import os, shutil
 
 search_dir = os.getcwd()
 
