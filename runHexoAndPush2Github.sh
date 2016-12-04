@@ -7,14 +7,14 @@ sudo hexo generate
 
 push2Github # push uncompiled code to Github
 
-cd "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/"
-rm -rf "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/lib"
+# cd "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/"
+# rm -rf "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/lib"
 
-mv "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/vendor" "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/lib"
+# mv "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/vendor" "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/lib"
 
-rm -rf "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/vendor"
+# rm -rf "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/vendor"
 
-findAndReplace
+# findAndReplace
 
 rsync --recursive  "/media/deadcoder0904/DEAD/Coding/General/100dayz-code/docs/" "/media/deadcoder0904/DEAD/Coding/General/100dayz/"
 
