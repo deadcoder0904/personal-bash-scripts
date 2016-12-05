@@ -11,6 +11,8 @@ git add . # Git add all
 git commit -m "$message" # Git Set Message  
 git push -u origin master # Git push to origin master
 
+ssmtp akshaykadam0904@gmail.com < "/media/deadcoder0904/DEAD/Coding/General/personal-bash-scripts/emailMsg.txt"
+
 echo
 echo "####################################################"
 echo "Run Github Trending Successful"
