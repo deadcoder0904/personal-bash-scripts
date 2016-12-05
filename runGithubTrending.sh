@@ -4,7 +4,7 @@ echo "####################################################"
 
 cd "/media/deadcoder0904/DEAD/Coding/100dayz/github-trending-json-api"
 yarn start
-message=${1:-":sparkles: `date` :cupid: :skull:"}  
+message=${1:-":sparkles: :heavy_check_mark: :jack_o_lantern: `date` :cupid: :skull:"}  
 echo $message
 
 git add . # Git add all
