@@ -2,12 +2,12 @@
 echo "Running Hugo & Pushing to Github"
 echo "========================"
 
-cd "/media/deadcoder0904/DEAD/Coding/General/blog/"
+cd "/media/deadcoder0904/DEAD/Coding/General/deadcoder0904.github.io-code/"
 hugo
 
 push2Github # push uncompiled code to Github
 
-rsync --recursive  "/media/deadcoder0904/DEAD/Coding/General/blog/public/" "/media/deadcoder0904/DEAD/Coding/General/deadcoder0904.github.io/"
+rsync --recursive  "/media/deadcoder0904/DEAD/Coding/General/deadcoder0904.github.io-code/public/" "/media/deadcoder0904/DEAD/Coding/General/deadcoder0904.github.io/"
 
 cd "/media/deadcoder0904/DEAD/Coding/General/deadcoder0904.github.io/"
 
