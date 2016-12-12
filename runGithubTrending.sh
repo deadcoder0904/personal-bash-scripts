@@ -16,5 +16,3 @@ ssmtp akshaykadam0904@gmail.com < "/media/deadcoder0904/DEAD/Coding/General/pers
 echo
 echo "####################################################"
 echo "Run Github Trending Successful"
-
-exit 0
