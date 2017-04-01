@@ -13,6 +13,7 @@ get_duration(){
 print_duration(){
     awk -v var="$1" 'BEGIN {print int(var/3600)"Hr "int((var%3600)/60)"Min "int(var%60)"Sec "}'
 }
+
 execute_it_now(){
     echo -e "Video File\t\tVideo Duration"
     echo $mysep
