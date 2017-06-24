@@ -3,7 +3,7 @@ echo "Running Emulator"
 echo "========================"
 
 cd /media/deadcoder0904/Akshay/Akshay/Android/Sdk/tools
-./emulator -avd Nexus_5X_API_24 -gpu off
+./emulator -avd Nexus_6_API_26 -gpu off
 
 echo
 echo "========================"
